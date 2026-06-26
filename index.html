@@ -3,18 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitOps Deployment</title>śśś
+    <title>GitOps Deployment Command Center</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; flex-direction: column; text-align: center; }
-        h1 { color: #2b6cb0; font-size: 3rem; }
-        .version { background-color: #e2e8f0; padding: 10px 20px; border-radius: 5px; display: inline-block; font-weight: bold; margin-top: 20px; }
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 { color: #58a6ff; margin-bottom: 5px; }
+        .status-badge {
+            background-color: #238636;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+        .signature {
+            border-top: 1px dashed #30363d;
+            padding-top: 20px;
+            margin-top: 25px;
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+        .highlight { color: #79c0ff; font-weight: bold; }
     </style>
 </head>
 <body>
-    <h1>Hello from Kubernetes via GitOps.</h1>
-    <p>This application is completely managed by ArgoCD.</p>
-    <div>
-        <span class="version">Version: 1.0.0</span>
+    <div class="container">
+        <h1>GitOps Cluster v2.0</h1>
+        <div class="status-badge">Pipeline Active</div>
+        <p>This application environment is successfully managed via automated GitOps synchronization primitives.</p>
+        
+        <div class="signature">
+            Environment Controller: <span class="highlight">soumyalsz</span><br>
+            Infrastructure Engine: <span class="highlight">ArgoCD & Kubernetes</span>
+        </div>
     </div>
 </body>
 </html>
